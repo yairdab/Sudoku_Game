@@ -3,7 +3,7 @@ My Sudoku game project, created using HTML, CSS &amp; JavaScript
 
 The intro file is login.html.
 
-in order to watch the game on GitHub, simply type in the URL (or press the link):
+in order to play the game on GitHub, simply type in the URL (or press the link):
 
 https://yairdab.github.io/Sudoku_Game/login.html
 
