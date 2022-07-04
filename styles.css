@@ -1,0 +1,112 @@
+/******************TAG SELECTORS*********************/
+
+body.dark{
+  background-color: lightgray; //background color - gray
+  color: white; //text color - white
+}
+
+button{
+  justify-self: center;
+}
+
+footer{
+  background-color: lightgray;
+  text-align: center;
+}
+
+h1{
+  font-size: 45pt;
+}
+
+header{
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid red;
+}
+
+p.selected{
+  background-color: lightblue;
+}
+
+/******************CLASS SELECTORS*********************/
+/* .hidden{
+  display: none;
+} */
+
+.game{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.setup-game{
+  display: flex;
+  justify-content: center;
+}
+
+/* for all the children divs of .setup-game: "difficulty", "time", theme */
+
+.setup-game > * {
+  margin-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.tile{
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin: 0px;
+  vertical-align: middle;
+  font-size: 40pt;
+}
+
+/* The following classes are written here below so they won't be
+overwritten by .tile: */
+
+.bottomBorder{
+  border-bottom: 4px solid black;
+}
+
+.rightBorder{
+  border-right: 4px solid black;
+}
+
+.wrong{
+  color: red;
+}
+/******************ID SELECTORS*********************/
+#board{
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  width: 600px;
+  height: 600px;
+}
+
+#goodLuck{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* for all the children divs of #number-container: "one", "two", "three", .. */
+
+#number-container > * {
+  border: 1px solid black;
+  border-radius: 20%;
+  height: 60px;
+  width: 60px;
+  font-size: 40pt;
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sudoku Game Project - Yair Daboul</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+  <h1>SudoKu</h1>
+  <div class="setup-game">
+    <div class="difficulty">
+      <h3>Choose Difficulty: </h3>
+      <label><input id="Easy" type="radio" name="difficulty" value="Easy" checked>Easy</label>
+      <label><input id="Medium" type="radio" name="difficulty" value="Medium">Medium</label>
+      <label><input id="Hard" type="radio" name="difficulty" value="Hard">Hard</label>
+    </div>
+    <div id="timerZone" hidden>
+      <label style="display: inline;" id="timerLabel" for="timer">Timer:</label>
+      <div style="display: inline; color: black;" id='timer'> </div>
+    </div>
+    <div class="theme">
+      <h3>Choose Theme: </h3>
+      <label><input id="Light" type="radio" name="theme" value="Light" checked onchange="changeTheme()">Light</label>
+      <label><input id="Dark" type="radio" name="theme" value="Dark" onchange="changeTheme()">Dark</label>
+    </div>
+  </div>
+  <button id="start-button">Create New Game!</button>
+</header>
+
+<body>
+  <div class="stats">
+    <p id="goodLuck">Good Luck!</p>
+  </div>
+  <div class="game">
+    <div id="board"></div>
+    <div id="number-container" class="hidden">
+      <p id="one">1</p>
+      <p id="two">2</p>
+      <p id="three">3</p>
+      <p id="four">4</p>
+      <p id="five">5</p>
+      <p id="six">6</p>
+      <p id="seven">7</p>
+      <p id="eight">8</p>
+      <p id="nine">9</p>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="sudoku.js"></script>
+  <script type="text/javascript" src="login.js"></script>
+</body>
+
+<footer>Made by Yair Daboul</footer>
+
+</html>
